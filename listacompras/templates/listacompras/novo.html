@@ -15,5 +15,11 @@
 
     <button type="submit">Salvar</button>
 </form>
+
+
+{% if produto %}
+    <a href="{% url 'url_delete' produto.id %}">Remover</a>
+{% endif %}
+
 </body>
 </html>
